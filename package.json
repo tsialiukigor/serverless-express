@@ -1,0 +1,21 @@
+{
+  "name": "serverless-express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "start": "sls offline start",
+    "deploy:all": "sls deploy",
+    "deploy:express-server": "sls deploy function -f express-server",
+    "remove:all": "sls remove"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "serverless-http": "^2.7.0"
+  },
+  "devDependencies": {
+    "serverless-offline": "^8.0.0"
+  }
+}

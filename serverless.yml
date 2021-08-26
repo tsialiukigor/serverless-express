@@ -1,0 +1,19 @@
+service: serverless-express
+
+frameworkVersion: '2'
+
+plugins:
+  - serverless-offline
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  stage: ${opt:stage, 'dev'}
+  region: us-east-1
+  lambdaHashingVersion: 20201221
+
+functions:
+  express-server:
+    handler: handler.expressServer
+    events:
+      - httpApi: '*'
