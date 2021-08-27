@@ -2,9 +2,9 @@
 
 The template for move a monolith in lambda. The statistics for just the express server:
 
-| Time (ms)                               | Memory usage (Mb) |
-| --------------------------------------- | ----------------- |
-| Called start: ~280ms. Warm start: ~18ms | 85Mb              |
+| Time (ms)                             | Memory usage (Mb) |
+| ------------------------------------- | ----------------- |
+| Cold start: ~280ms. Warm start: ~18ms | 85Mb              |
 
 ## Installation
 
